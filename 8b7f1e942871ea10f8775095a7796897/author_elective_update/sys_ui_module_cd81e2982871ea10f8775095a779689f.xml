@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="sys_ui_module">
+    <sys_ui_module action="DELETE">
+        <active>true</active>
+        <application display_value="Biblioshelf">6011a6582871ea10f8775095a7796831</application>
+        <filter/>
+        <name>Staffs</name>
+        <order/>
+        <path/>
+        <path_relative_to_root>false</path_relative_to_root>
+        <roles>x_snc_biblioshelf.staff_user</roles>
+        <sys_class_name>sys_ui_module</sys_class_name>
+        <sys_created_by>maint</sys_created_by>
+        <sys_created_on>2025-05-25 03:04:01</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path>/</sys_domain_path>
+        <sys_id>cd81e2982871ea10f8775095a779689f</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>Staffs</sys_name>
+        <sys_package display_value="Biblioshelf" source="x_snc_biblioshelf">8b7f1e942871ea10f8775095a7796897</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Biblioshelf">8b7f1e942871ea10f8775095a7796897</sys_scope>
+        <sys_update_name>sys_ui_module_cd81e2982871ea10f8775095a779689f</sys_update_name>
+        <sys_updated_by>maint</sys_updated_by>
+        <sys_updated_on>2025-05-25 03:04:01</sys_updated_on>
+        <table>x_snc_biblioshelf_staff</table>
+        <uncancelable>false</uncancelable>
+        <view_name/>
+    </sys_ui_module>
+    <sys_update_version action="INSERT_OR_UPDATE">
+        <action>DELETE</action>
+        <application display_value="Biblioshelf">8b7f1e942871ea10f8775095a7796897</application>
+        <file_path/>
+        <instance_id>1a4433d61c61221065658ab6889f026b</instance_id>
+        <instance_name>glide_db_dump</instance_name>
+        <name>sys_ui_module_cd81e2982871ea10f8775095a779689f</name>
+        <payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="sys_ui_module"><sys_ui_module action="INSERT_OR_UPDATE"><active>true</active><application display_value="Biblioshelf">6011a6582871ea10f8775095a7796831</application><filter/><name>Staffs</name><order/><path/><path_relative_to_root>false</path_relative_to_root><roles>x_snc_biblioshelf.staff_user</roles><sys_class_name>sys_ui_module</sys_class_name><sys_created_by>maint</sys_created_by><sys_created_on>2025-05-25 03:04:01</sys_created_on><sys_domain>global</sys_domain><sys_domain_path>/</sys_domain_path><sys_id>cd81e2982871ea10f8775095a779689f</sys_id><sys_mod_count>0</sys_mod_count><sys_name>Staffs</sys_name><sys_package display_value="Biblioshelf" source="x_snc_biblioshelf">8b7f1e942871ea10f8775095a7796897</sys_package><sys_policy/><sys_scope display_value="Biblioshelf">8b7f1e942871ea10f8775095a7796897</sys_scope><sys_update_name>sys_ui_module_cd81e2982871ea10f8775095a779689f</sys_update_name><sys_updated_by>maint</sys_updated_by><sys_updated_on>2025-05-25 03:04:01</sys_updated_on><table>x_snc_biblioshelf_staff</table><uncancelable>false</uncancelable><view_name/></sys_ui_module></record_update>]]></payload>
+        <payload_hash>-477788334</payload_hash>
+        <record_name>Staffs</record_name>
+        <reverted_from/>
+        <source>037f1e942871ea10f8775095a7796899</source>
+        <source_table>sys_update_set</source_table>
+        <state>previous</state>
+        <sys_created_by>maint</sys_created_by>
+        <sys_created_on>2025-05-25 03:04:01</sys_created_on>
+        <sys_id>cd8126982871ea10f8775095a7796868</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_recorded_at>1970565b6ef0000001</sys_recorded_at>
+        <sys_updated_by>maint</sys_updated_by>
+        <sys_updated_on>2025-05-25 03:04:01</sys_updated_on>
+        <type>Module</type>
+        <update_guid>c1812698a271ea1025da9caeae7d6768</update_guid>
+        <update_guid_history>c1812698a271ea1025da9caeae7d6768:-477788334</update_guid_history>
+    </sys_update_version>
+    <sys_metadata_delete action="INSERT_OR_UPDATE">
+        <sys_audit_delete/>
+        <sys_class_name>sys_metadata_delete</sys_class_name>
+        <sys_created_by>maint</sys_created_by>
+        <sys_created_on>2025-05-25 03:28:38</sys_created_on>
+        <sys_db_object display_value="" name="sys_ui_module">sys_ui_module</sys_db_object>
+        <sys_id>45975d237ee541a0879224236add2400</sys_id>
+        <sys_metadata>cd81e2982871ea10f8775095a779689f</sys_metadata>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>Staffs</sys_name>
+        <sys_package display_value="Biblioshelf" source="x_snc_biblioshelf">8b7f1e942871ea10f8775095a7796897</sys_package>
+        <sys_parent/>
+        <sys_policy/>
+        <sys_scope display_value="Biblioshelf">8b7f1e942871ea10f8775095a7796897</sys_scope>
+        <sys_scope_delete display_value="">09f28a00ed0a40389664abdd9b052e40</sys_scope_delete>
+        <sys_update_name>sys_ui_module_cd81e2982871ea10f8775095a779689f</sys_update_name>
+        <sys_update_version display_value="sys_ui_module_cd81e2982871ea10f8775095a779689f">cd8126982871ea10f8775095a7796868</sys_update_version>
+        <sys_updated_by>maint</sys_updated_by>
+        <sys_updated_on>2025-05-25 03:28:38</sys_updated_on>
+    </sys_metadata_delete>
+</record_update>

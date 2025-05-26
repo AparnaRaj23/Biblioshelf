@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?><database>
+    <element db_object_id="d0d16e982871ea10f8775095a779680e" label="Items" max_length="40" name="x_snc_biblioshelf_items" type="collection">
+        <element display="true" label="Item ID" max_length="40" name="item_id" type="string"/>
+        <element label="Genre" max_length="40" name="genre" type="string"/>
+        <element label="Title" max_length="40" name="title" type="string"/>
+        <element label="Fine (per day)" max_length="38" name="fine_per_day" type="currency"/>
+        <element label="Author" max_length="40" name="author" type="string"/>
+        <element label="Edition" max_length="40" name="edition" type="string"/>
+        <element choice="3" label="Item type" max_length="40" name="item_type" type="choice">
+            <choice>
+                <element inactive_on_update="false" label="Ebook" sequence="1" value="ebook"/>
+                <element inactive_on_update="false" label="Book" sequence="0" value="book"/>
+            </choice>
+        </element>
+        <element label="Price" max_length="38" name="price" type="currency"/>
+        <element default="javascript:current.getTableName();" label="Class" max_length="80" name="sys_class_name" type="sys_class_name"/>
+        <index name="index">
+            <element name="sys_class_name"/>
+        </index>
+    </element>
+</database>

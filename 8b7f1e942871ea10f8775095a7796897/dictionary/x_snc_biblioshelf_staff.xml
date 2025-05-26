@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?><database>
+    <element db_object_id="58c7661428b1ea10f8775095a779686d" extends="sys_user" label="Staff" max_length="40" name="x_snc_biblioshelf_staff" type="collection">
+        <element label="Workstation" max_length="40" name="workstation" type="string"/>
+        <element label="Joining Date" max_length="40" name="joining_date" type="glide_date"/>
+    </element>
+</database>

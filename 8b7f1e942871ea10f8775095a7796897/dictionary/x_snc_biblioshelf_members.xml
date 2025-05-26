@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?><database>
+    <element db_object_id="b9a76ed028b1ea10f8775095a77968c7" extends="sys_user" label="Members" max_length="40" name="x_snc_biblioshelf_members" type="collection">
+        <element label="Registration Date" max_length="40" name="registration_date" type="glide_date"/>
+        <element label="Total fine" max_length="40" name="total_fine" type="currency"/>
+        <element default="5" label="No. of Books Allowed" max_length="255" name="no_of_books_allowed" type="integer"/>
+    </element>
+</database>

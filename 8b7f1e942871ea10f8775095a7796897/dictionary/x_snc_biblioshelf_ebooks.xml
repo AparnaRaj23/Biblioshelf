@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?><database>
+    <element db_object_id="3f38a21428b1ea10f8775095a77968d0" extends="x_snc_biblioshelf_items" label="Ebooks" max_length="40" name="x_snc_biblioshelf_ebooks" type="collection">
+        <element label="Ebook ID" max_length="32" name="ebook_id" reference="x_snc_biblioshelf_items" reference_qual="item_type=ebook^item_idISNOTEMPTY^EQ" reference_qual_condition="item_type=ebook^item_idISNOTEMPTY^EQ" type="reference"/>
+        <element label="Available" max_length="255" name="available" type="boolean"/>
+    </element>
+</database>

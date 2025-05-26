@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="sys_script_client">
+    <sys_script_client action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <applies_extended>false</applies_extended>
+        <condition/>
+        <description/>
+        <field>book_id</field>
+        <global>true</global>
+        <isolate_script>true</isolate_script>
+        <messages/>
+        <name>Autopopulate Book Fields</name>
+        <order/>
+        <script><![CDATA[function onChange(control, oldValue, newValue, isLoading, isTemplate) {
+    if (isLoading || newValue === '') {
+        return;
+    }
+
+    var ga = new GlideAjax('biblioshelfUtils');
+    ga.addParam('sysparm_name', 'getItemDetailsForBook');
+    ga.addParam('sysparm_book_id', newValue);
+    ga.getXMLAnswer(function(response) {
+        if (response) {
+            var item = JSON.parse(response);
+            g_form.setValue('title', item.title);
+			g_form.setReadOnly('title', true);
+
+            g_form.setValue('author', item.author);
+			g_form.setReadOnly('author', true);
+
+			g_form.setValue('genre', item.genre);
+			g_form.setReadOnly('genre', true);
+
+            g_form.setValue('price', item.price);
+			g_form.setReadOnly('price', true);
+
+			g_form.setValue('edition', item.edition);
+			g_form.setReadOnly('edition', true);
+			
+            g_form.setValue('fine_per_day', item.fine_per_day);
+			g_form.setReadOnly('fine_per_day', true);
+        }
+    });
+
+}]]></script>
+        <sys_class_name>sys_script_client</sys_class_name>
+        <sys_created_by>maint</sys_created_by>
+        <sys_created_on>2025-05-25 04:48:44</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path>/</sys_domain_path>
+        <sys_id>8938fe5c28f1ea10f8775095a77968d5</sys_id>
+        <sys_mod_count>12</sys_mod_count>
+        <sys_name>Autopopulate Book Fields</sys_name>
+        <sys_overrides/>
+        <sys_package display_value="Biblioshelf" source="x_snc_biblioshelf">8b7f1e942871ea10f8775095a7796897</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Biblioshelf">8b7f1e942871ea10f8775095a7796897</sys_scope>
+        <sys_update_name>sys_script_client_8938fe5c28f1ea10f8775095a77968d5</sys_update_name>
+        <sys_updated_by>maint</sys_updated_by>
+        <sys_updated_on>2025-05-25 15:37:18</sys_updated_on>
+        <table>x_snc_biblioshelf_books</table>
+        <type>onChange</type>
+        <ui_type>10</ui_type>
+        <view/>
+    </sys_script_client>
+</record_update>

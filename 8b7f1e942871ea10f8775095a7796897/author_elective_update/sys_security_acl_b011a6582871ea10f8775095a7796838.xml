@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_security_acl">
+    <sys_security_acl action="DELETE">
+        <active>true</active>
+        <admin_overrides>true</admin_overrides>
+        <advanced>false</advanced>
+        <applies_to/>
+        <condition/>
+        <controlled_by_refs/>
+        <decision_type>allow</decision_type>
+        <description>Default access control on x_snc_biblioshelf_members</description>
+        <local_or_existing>Existing</local_or_existing>
+        <name>x_snc_biblioshelf_members</name>
+        <operation display_value="create">create</operation>
+        <script/>
+        <security_attribute/>
+        <sys_class_name>sys_security_acl</sys_class_name>
+        <sys_created_by>maint</sys_created_by>
+        <sys_created_on>2025-05-25 03:02:05</sys_created_on>
+        <sys_id>b011a6582871ea10f8775095a7796838</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>x_snc_biblioshelf_members</sys_name>
+        <sys_package display_value="Biblioshelf" source="x_snc_biblioshelf">8b7f1e942871ea10f8775095a7796897</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Biblioshelf">8b7f1e942871ea10f8775095a7796897</sys_scope>
+        <sys_update_name>sys_security_acl_b011a6582871ea10f8775095a7796838</sys_update_name>
+        <sys_updated_by>maint</sys_updated_by>
+        <sys_updated_on>2025-05-25 03:02:05</sys_updated_on>
+        <type display_value="record">record</type>
+    </sys_security_acl>
+    <sys_update_version action="INSERT_OR_UPDATE">
+        <action>DELETE</action>
+        <application display_value="Biblioshelf">8b7f1e942871ea10f8775095a7796897</application>
+        <file_path/>
+        <instance_id>1a4433d61c61221065658ab6889f026b</instance_id>
+        <instance_name>glide_db_dump</instance_name>
+        <name>sys_security_acl_b011a6582871ea10f8775095a7796838</name>
+        <payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_security_acl"><sys_security_acl action="INSERT_OR_UPDATE"><active>true</active><admin_overrides>true</admin_overrides><advanced>false</advanced><applies_to/><condition/><controlled_by_refs/><decision_type>allow</decision_type><description>Default access control on x_snc_biblioshelf_members</description><local_or_existing>Existing</local_or_existing><name>x_snc_biblioshelf_members</name><operation display_value="create">create</operation><script/><security_attribute/><sys_class_name>sys_security_acl</sys_class_name><sys_created_by>maint</sys_created_by><sys_created_on>2025-05-25 03:02:05</sys_created_on><sys_id>b011a6582871ea10f8775095a7796838</sys_id><sys_mod_count>0</sys_mod_count><sys_name>x_snc_biblioshelf_members</sys_name><sys_package display_value="Biblioshelf" source="x_snc_biblioshelf">8b7f1e942871ea10f8775095a7796897</sys_package><sys_policy/><sys_scope display_value="Biblioshelf">8b7f1e942871ea10f8775095a7796897</sys_scope><sys_update_name>sys_security_acl_b011a6582871ea10f8775095a7796838</sys_update_name><sys_updated_by>maint</sys_updated_by><sys_updated_on>2025-05-25 03:02:05</sys_updated_on><type display_value="record">record</type></sys_security_acl></record_update>]]></payload>
+        <payload_hash>-1433122325</payload_hash>
+        <record_name>x_snc_biblioshelf_members</record_name>
+        <reverted_from/>
+        <source>037f1e942871ea10f8775095a7796899</source>
+        <source_table>sys_update_set</source_table>
+        <state>previous</state>
+        <sys_created_by>maint</sys_created_by>
+        <sys_created_on>2025-05-25 03:02:05</sys_created_on>
+        <sys_id>f411a6582871ea10f8775095a7796849</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_recorded_at>1970563f2cd0000001</sys_recorded_at>
+        <sys_updated_by>maint</sys_updated_by>
+        <sys_updated_on>2025-05-25 03:02:05</sys_updated_on>
+        <type>Access Control</type>
+        <update_guid>f811a6580671ea10be4b6e2428d49048</update_guid>
+        <update_guid_history>f811a6580671ea10be4b6e2428d49048:-1433122325</update_guid_history>
+    </sys_update_version>
+    <sys_metadata_delete action="INSERT_OR_UPDATE">
+        <sys_audit_delete/>
+        <sys_class_name>sys_metadata_delete</sys_class_name>
+        <sys_created_by>maint</sys_created_by>
+        <sys_created_on>2025-05-25 03:29:54</sys_created_on>
+        <sys_db_object display_value="" name="sys_security_acl">sys_security_acl</sys_db_object>
+        <sys_id>16e8f65653ca4c70904fcd27c7748969</sys_id>
+        <sys_metadata>b011a6582871ea10f8775095a7796838</sys_metadata>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>x_snc_biblioshelf_members</sys_name>
+        <sys_package display_value="Biblioshelf" source="x_snc_biblioshelf">8b7f1e942871ea10f8775095a7796897</sys_package>
+        <sys_parent display_value="">3811a6582871ea10f8775095a7796870</sys_parent>
+        <sys_policy/>
+        <sys_scope display_value="Biblioshelf">8b7f1e942871ea10f8775095a7796897</sys_scope>
+        <sys_scope_delete display_value="">09f28a00ed0a40389664abdd9b052e40</sys_scope_delete>
+        <sys_update_name>sys_security_acl_b011a6582871ea10f8775095a7796838</sys_update_name>
+        <sys_update_version display_value="sys_security_acl_b011a6582871ea10f8775095a7796838">f411a6582871ea10f8775095a7796849</sys_update_version>
+        <sys_updated_by>maint</sys_updated_by>
+        <sys_updated_on>2025-05-25 03:29:54</sys_updated_on>
+    </sys_metadata_delete>
+</record_update>

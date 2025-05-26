@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?><database>
+    <element db_object_id="69a6dc7428f16e10f8775095a779684c" label="Issued Items" max_length="40" name="x_snc_biblioshelf_issued_items" type="collection">
+        <element label="Issued Item ID" max_length="32" name="issued_item_id" reference="x_snc_biblioshelf_items" reference_qual="item_idISNOTEMPTY^EQ" reference_qual_condition="item_idISNOTEMPTY^EQ" type="reference"/>
+        <element label="Return Date" max_length="40" name="return_date" type="glide_date_time"/>
+        <element label="Item Type" max_length="40" name="item_type" type="string"/>
+        <element label="Due Date" max_length="40" name="due_date" type="glide_date_time"/>
+        <element label="Issued To" max_length="32" name="issued_to" reference="x_snc_biblioshelf_members" type="reference"/>
+        <element label="Fine (till now)" max_length="20" name="fine_till_now" type="currency"/>
+        <element label="Issued Date" max_length="40" name="issued_date" type="glide_date_time"/>
+        <index name="index">
+            <element name="issued_item_id"/>
+        </index>
+        <index name="index2">
+            <element name="issued_to"/>
+        </index>
+    </element>
+</database>

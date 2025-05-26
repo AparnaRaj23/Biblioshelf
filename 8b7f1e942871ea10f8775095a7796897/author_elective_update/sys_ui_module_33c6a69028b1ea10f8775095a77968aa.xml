@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="sys_ui_module">
+    <sys_ui_module action="DELETE">
+        <active>true</active>
+        <application display_value="Biblioshelf">6011a6582871ea10f8775095a7796831</application>
+        <filter/>
+        <name>Issued Items</name>
+        <order/>
+        <path/>
+        <path_relative_to_root>false</path_relative_to_root>
+        <roles>x_snc_biblioshelf.issued_items_user</roles>
+        <sys_class_name>sys_ui_module</sys_class_name>
+        <sys_created_by>maint</sys_created_by>
+        <sys_created_on>2025-05-25 03:27:09</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path>/</sys_domain_path>
+        <sys_id>33c6a69028b1ea10f8775095a77968aa</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>Issued Items</sys_name>
+        <sys_package display_value="Biblioshelf" source="x_snc_biblioshelf">8b7f1e942871ea10f8775095a7796897</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Biblioshelf">8b7f1e942871ea10f8775095a7796897</sys_scope>
+        <sys_update_name>sys_ui_module_33c6a69028b1ea10f8775095a77968aa</sys_update_name>
+        <sys_updated_by>maint</sys_updated_by>
+        <sys_updated_on>2025-05-25 03:27:09</sys_updated_on>
+        <table>x_snc_biblioshelf_issued_items</table>
+        <uncancelable>false</uncancelable>
+        <view_name/>
+    </sys_ui_module>
+    <sys_update_version action="INSERT_OR_UPDATE">
+        <action>DELETE</action>
+        <application display_value="Biblioshelf">8b7f1e942871ea10f8775095a7796897</application>
+        <file_path/>
+        <instance_id>1a4433d61c61221065658ab6889f026b</instance_id>
+        <instance_name>glide_db_dump</instance_name>
+        <name>sys_ui_module_33c6a69028b1ea10f8775095a77968aa</name>
+        <payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="sys_ui_module"><sys_ui_module action="INSERT_OR_UPDATE"><active>true</active><application display_value="Biblioshelf">6011a6582871ea10f8775095a7796831</application><filter/><name>Issued Items</name><order/><path/><path_relative_to_root>false</path_relative_to_root><roles>x_snc_biblioshelf.issued_items_user</roles><sys_class_name>sys_ui_module</sys_class_name><sys_created_by>maint</sys_created_by><sys_created_on>2025-05-25 03:27:09</sys_created_on><sys_domain>global</sys_domain><sys_domain_path>/</sys_domain_path><sys_id>33c6a69028b1ea10f8775095a77968aa</sys_id><sys_mod_count>0</sys_mod_count><sys_name>Issued Items</sys_name><sys_package display_value="Biblioshelf" source="x_snc_biblioshelf">8b7f1e942871ea10f8775095a7796897</sys_package><sys_policy/><sys_scope display_value="Biblioshelf">8b7f1e942871ea10f8775095a7796897</sys_scope><sys_update_name>sys_ui_module_33c6a69028b1ea10f8775095a77968aa</sys_update_name><sys_updated_by>maint</sys_updated_by><sys_updated_on>2025-05-25 03:27:09</sys_updated_on><table>x_snc_biblioshelf_issued_items</table><uncancelable>false</uncancelable><view_name/></sys_ui_module></record_update>]]></payload>
+        <payload_hash>2062266910</payload_hash>
+        <record_name>Issued Items</record_name>
+        <reverted_from/>
+        <source>037f1e942871ea10f8775095a7796899</source>
+        <source_table>sys_update_set</source_table>
+        <state>previous</state>
+        <sys_created_by>maint</sys_created_by>
+        <sys_created_on>2025-05-25 03:27:09</sys_created_on>
+        <sys_id>33c6a69028b1ea10f8775095a77968ac</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_recorded_at>197057ae41d0000001</sys_recorded_at>
+        <sys_updated_by>maint</sys_updated_by>
+        <sys_updated_on>2025-05-25 03:27:09</sys_updated_on>
+        <type>Module</type>
+        <update_guid>37c6a690dfb1ea10a6be9909ba8040ab</update_guid>
+        <update_guid_history>37c6a690dfb1ea10a6be9909ba8040ab:2062266910</update_guid_history>
+    </sys_update_version>
+    <sys_metadata_delete action="INSERT_OR_UPDATE">
+        <sys_audit_delete/>
+        <sys_class_name>sys_metadata_delete</sys_class_name>
+        <sys_created_by>maint</sys_created_by>
+        <sys_created_on>2025-05-26 06:13:04</sys_created_on>
+        <sys_db_object display_value="" name="sys_ui_module">sys_ui_module</sys_db_object>
+        <sys_id>74ca8e7a099e4554982b3c6a17c5ce90</sys_id>
+        <sys_metadata>33c6a69028b1ea10f8775095a77968aa</sys_metadata>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>Issued Items</sys_name>
+        <sys_package display_value="Biblioshelf" source="x_snc_biblioshelf">8b7f1e942871ea10f8775095a7796897</sys_package>
+        <sys_parent/>
+        <sys_policy/>
+        <sys_scope display_value="Biblioshelf">8b7f1e942871ea10f8775095a7796897</sys_scope>
+        <sys_scope_delete display_value="">09f28a00ed0a40389664abdd9b052e40</sys_scope_delete>
+        <sys_update_name>sys_ui_module_33c6a69028b1ea10f8775095a77968aa</sys_update_name>
+        <sys_update_version display_value="sys_ui_module_33c6a69028b1ea10f8775095a77968aa">33c6a69028b1ea10f8775095a77968ac</sys_update_version>
+        <sys_updated_by>maint</sys_updated_by>
+        <sys_updated_on>2025-05-26 06:13:04</sys_updated_on>
+    </sys_metadata_delete>
+</record_update>
