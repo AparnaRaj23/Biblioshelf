@@ -33,6 +33,8 @@ FineCalculator.prototype = {
 
             if (itemGr.next()) {
                 var finePerDay = itemGr.getValue('fine_per_day');
+		finePerDay = finePerDay.replace(/[^0-9.-]/g, '');
+		finePerDay = Number(finePerDay);
             }
 
             if (returnDate.compareTo(dueDate)) {
@@ -55,7 +57,7 @@ FineCalculator.prototype = {
         gr.query();
 
         while (gr.next()) {
-            total += gr.getValue('fine_till_now');
+            total += Number(gr.getValue('fine_till_now'));
         }
 
         // Update the member table
