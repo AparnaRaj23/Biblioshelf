@@ -4,12 +4,6 @@
 
 ---
 
-## 👩‍💻 Developed by
-**Aparna Raj**  
-*Associate Software Engineer*  
-
----
-
 ## 🧩 Problem Statement
 
 The current library system suffers from manual workflows, leading to:
