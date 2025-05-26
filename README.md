@@ -24,34 +24,64 @@ Biblioshelf streamlines and automates key library workflows:
 
 ---
 
-## Upload to a New Instance
+## 🛠️ Installation Guide
 
-#### If using Update Set:
-1. Go to **System Update Sets → Retrieved Update Sets**.
-2. Click **Import Update Set from XML**.
-3. Upload the downloaded XML file.
-4. After importing, open the update set and click **Preview Update Set**.
-5. If no errors, click **Commit Update Set**.
-
-#### If using Application Repository:
-1. Go to **System Applications → Applications**.
-2. Click **All Applications** and then **Downloads** tab.
-3. Search for your app by name (e.g., `Biblioshelf`).
-4. Click **Install** and follow the prompts.
+Follow these steps to install the **📚 Biblioshelf** app in your ServiceNow instance from GitHub using **Source Control Integration**.
 
 ---
 
-## Post-Installation
-- Navigate to **Studio** or **Application Explorer** to confirm all tables, scripts, and flows are present.
-- Test by impersonating a `Staff` and `Member` user to validate ACLs and workflows.
-- Ensure email notifications are configured if sending overdue fines via email.
+### 🌐 Prerequisites
+
+- A GitHub repository with the application code pushed
+- A ServiceNow Developer Instance
+- `admin` role access on the instance
 
 ---
 
-## ✅ Pro Tips
-- Use **Application Picker** to switch to the `Biblioshelf` app before testing.
-- Add test data using the `Books`, `Ebooks`, and `Members` modules.
-- Use **Flow Designer → Test → Execution Details** to debug automation flows.
+### 🔐 1. Create a GitHub Credential in ServiceNow
+
+Before linking to GitHub, create a credential to allow ServiceNow to access your GitHub repo:
+
+1. Navigate to **System Definition → Credentials**
+2. Click **New**
+3. Choose **Basic Auth Credentials**
+4. Fill in:
+   - **Name**: e.g., `GitHub Biblioshelf`
+   - **Username**: Your GitHub username
+   - **Password**: Your GitHub [personal access token](https://github.com/settings/tokens) (not your GitHub password)
+5. Click **Submit** ✅
+
+---
+
+### 🧩 2. Link App to GitHub via Studio
+
+1. Open **Studio** (`System Applications → Studio`)
+2. In the **Application Picker**, choose or create the `Biblioshelf` app
+3. Click **Source Control → Link to Source Control** 🔗
+4. Fill in:
+   - **Repository URL**: `https://github.com/your-username/your-repo-name.git`
+   - **Branch**: e.g., `main`
+   - **Credential**: Select the credential you just created (`GitHub Biblioshelf`)
+5. Click **Link to Source Control** and wait for the sync to complete
+
+📘 **Reference**: Official ServiceNow guide on [Linking to Source Control](https://developer.servicenow.com/dev.do#!/learn/courses/xanadu/app_store_learnv2_rest_xanadu_rest_integrations/app_store_learnv2_rest_xanadu_data_stream_actions/app_store_learnv2_rest_xanadu_exercise_save_your_world_glaciers_spoke_work_optional)
+
+---
+
+### 🧪 3. Post-Installation Checklist
+
+- ✅ Use **Studio** to verify that all tables, flows, and scripts have synced
+- 👥 Test access controls by impersonating both a **Staff** and **Member**
+- ✉️ Ensure notifications are configured properly for overdue alerts
+- 🔍 Use **Flow Designer → Test → Execution Details** to troubleshoot automation
+
+---
+
+### 💡 Pro Tips
+
+- 🧭 Use **Application Picker** to stay within the correct app scope
+- 📚 Use `Books`, `Ebooks`, and `Issued Items` to seed your library with test data
+- 🧠 Maintain your source control repo for versioning and team collaboration
 
 ---
 
