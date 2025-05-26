@@ -54,18 +54,25 @@ Biblioshelf streamlines and automates key library workflows:
 ## 🛠️ Components Used
 
 - **User Table Extensions**: Custom Member & Staff tables
-- **Client Scripts**: Auto-populate field values from Items table
+- **Client Scripts**:
+  - Auto-populate field values in `Books`, `Ebooks`, and `Issued Item` tables from the `Items` table (e.g., Title, Author, etc.)
+  - **Auto-update logic**: Automatically updates the following when a book is issued:
+    - `No. of Copies Available`
+    - `No. of Books Allowed`
+- **Field control logic**:
+  - Sets `Item Type` to `'Book'` or `'Ebook'` based on the item
+  - Makes certain fields read-only based on context to ensure data integrity
 - **Script Includes**:
   - Fine calculation logic
   - Utility & helper functions
 - **UI Policies**:
-  - Set item type (`Book`/`Ebook`)
   - Control field visibility
 - **UI Actions**:
-  - Request button (form banner) to initiate borrow flow
+  - Request button (form banner) to initiate book borrow flow
 - **Business Rules**:
   - Fine calculators (per item/member)
   - Field validations and availability updates
+  - Field validations 
 - **Flow Designer**:
   - Notifications for borrowing events
 
@@ -74,8 +81,9 @@ Biblioshelf streamlines and automates key library workflows:
 ## 🧬 Data Model
 
 - Items Table (base info: Title, Author, etc.)
-- Derived: Books, Ebooks, Issued Items
-- Users: Staff, Members
+- Derived: Books, Ebooks
+-  Issued Items
+- Users: Admin, Staff, Members
 
 ---
 
@@ -86,13 +94,3 @@ Biblioshelf streamlines and automates key library workflows:
 - 💳 **Subscription Model**: Premium features or access tiers  
 - ⏰ **Scheduled Notifications**: Weekly engagement updates  
 - 📊 **Library Stats**: Analytics via scheduled reports  
-
----
-
-## 🎓 My Takeaways
-
-- Learned to design scalable ServiceNow apps
-- Gained deeper insights into ACL, UI scripting, and Flow Designer
-- Understood importance of user-centric workflows and clean automation
-
----
