@@ -24,6 +24,37 @@ Biblioshelf streamlines and automates key library workflows:
 
 ---
 
+## Upload to a New Instance
+
+#### If using Update Set:
+1. Go to **System Update Sets → Retrieved Update Sets**.
+2. Click **Import Update Set from XML**.
+3. Upload the downloaded XML file.
+4. After importing, open the update set and click **Preview Update Set**.
+5. If no errors, click **Commit Update Set**.
+
+#### If using Application Repository:
+1. Go to **System Applications → Applications**.
+2. Click **All Applications** and then **Downloads** tab.
+3. Search for your app by name (e.g., `Biblioshelf`).
+4. Click **Install** and follow the prompts.
+
+---
+
+## Post-Installation
+- Navigate to **Studio** or **Application Explorer** to confirm all tables, scripts, and flows are present.
+- Test by impersonating a `Staff` and `Member` user to validate ACLs and workflows.
+- Ensure email notifications are configured if sending overdue fines via email.
+
+---
+
+## ✅ Pro Tips
+- Use **Application Picker** to switch to the `Biblioshelf` app before testing.
+- Add test data using the `Books`, `Ebooks`, and `Members` modules.
+- Use **Flow Designer → Test → Execution Details** to debug automation flows.
+
+---
+
 ## 👥 User Personas
 
 ### 1. Staff
