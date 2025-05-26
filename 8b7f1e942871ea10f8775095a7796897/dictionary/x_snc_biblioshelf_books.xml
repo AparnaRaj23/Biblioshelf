@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?><database>
+    <element db_object_id="c2682a5428b1ea10f8775095a779682e" extends="x_snc_biblioshelf_items" label="Books" max_length="40" name="x_snc_biblioshelf_books" type="collection">
+        <element label="Book ID" max_length="32" name="book_id" reference="x_snc_biblioshelf_items" reference_qual="item_type=book^item_idISNOTEMPTY^EQ" reference_qual_condition="item_type=book^item_idISNOTEMPTY^EQ" type="reference"/>
+        <element label="Request" max_length="40" name="request" read_only="true" type="boolean"/>
+        <element default="10" label="No. of Copies Available" max_length="255" name="no_of_copies_available" type="integer"/>
+        <index name="index">
+            <element name="book_id"/>
+        </index>
+    </element>
+</database>

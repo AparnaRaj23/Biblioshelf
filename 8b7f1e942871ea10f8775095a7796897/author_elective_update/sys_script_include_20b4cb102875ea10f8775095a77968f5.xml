@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_script_include">
+    <sys_script_include action="DELETE">
+        <access>package_private</access>
+        <active>true</active>
+        <api_name>x_snc_biblioshelf.GetItemDetails</api_name>
+        <caller_access/>
+        <client_callable>true</client_callable>
+        <description/>
+        <mobile_callable>false</mobile_callable>
+        <name>GetItemDetails</name>
+        <sandbox_callable>false</sandbox_callable>
+        <script><![CDATA[var GetItemDetails = Class.create();
+GetItemDetails.prototype = Object.extendsObject(global.AbstractAjaxProcessor, {
+    getItemDetails: function() {
+        var gr = new GlideRecord('x_snc_biblioshelf_items');
+		gr.query();
+		
+        if (gr.next() && gr.getValue('item_id')) {
+            return JSON.stringify({
+                title: gr.getValue('title'),
+                author: gr.getValue('author'),
+                genre: gr.getValue('genre'),
+				edition: gr.getValue('edition'),
+				price: gr.getValue('price'),
+				fine_per_day: gr.getValue('fine_per_day')
+            });
+        }
+
+        return JSON.stringify({});
+    },
+
+    type: 'GetItemDetails'
+});]]></script>
+        <sys_class_name>sys_script_include</sys_class_name>
+        <sys_created_by>maint</sys_created_by>
+        <sys_created_on>2025-05-25 05:39:42</sys_created_on>
+        <sys_id>20b4cb102875ea10f8775095a77968f5</sys_id>
+        <sys_mod_count>6</sys_mod_count>
+        <sys_name>GetItemDetails</sys_name>
+        <sys_package display_value="Biblioshelf" source="x_snc_biblioshelf">8b7f1e942871ea10f8775095a7796897</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Biblioshelf">8b7f1e942871ea10f8775095a7796897</sys_scope>
+        <sys_update_name>sys_script_include_20b4cb102875ea10f8775095a77968f5</sys_update_name>
+        <sys_updated_by>maint</sys_updated_by>
+        <sys_updated_on>2025-05-25 05:52:35</sys_updated_on>
+    </sys_script_include>
+    <sys_update_version action="INSERT_OR_UPDATE">
+        <action>DELETE</action>
+        <application display_value="Biblioshelf">8b7f1e942871ea10f8775095a7796897</application>
+        <file_path/>
+        <instance_id>1a4433d61c61221065658ab6889f026b</instance_id>
+        <instance_name>glide_db_dump</instance_name>
+        <name>sys_script_include_20b4cb102875ea10f8775095a77968f5</name>
+        <payload>&lt;?xml version="1.0" encoding="UTF-8"?&gt;&lt;record_update table="sys_script_include"&gt;&lt;sys_script_include action="INSERT_OR_UPDATE"&gt;&lt;access&gt;package_private&lt;/access&gt;&lt;active&gt;true&lt;/active&gt;&lt;api_name&gt;x_snc_biblioshelf.GetItemDetails&lt;/api_name&gt;&lt;caller_access/&gt;&lt;client_callable&gt;true&lt;/client_callable&gt;&lt;description/&gt;&lt;mobile_callable&gt;false&lt;/mobile_callable&gt;&lt;name&gt;GetItemDetails&lt;/name&gt;&lt;sandbox_callable&gt;false&lt;/sandbox_callable&gt;&lt;script&gt;&lt;![CDATA[var GetItemDetails = Class.create();
+GetItemDetails.prototype = Object.extendsObject(global.AbstractAjaxProcessor, {
+    getItemDetails: function() {
+        var gr = new GlideRecord('x_snc_biblioshelf_items');
+		gr.query();
+		
+        if (gr.next() &amp;&amp; gr.getValue('item_id')) {
+            return JSON.stringify({
+                title: gr.getValue('title'),
+                author: gr.getValue('author'),
+                genre: gr.getValue('genre'),
+				edition: gr.getValue('edition'),
+				price: gr.getValue('price'),
+				fine_per_day: gr.getValue('fine_per_day')
+            });
+        }
+
+        return JSON.stringify({});
+    },
+
+    type: 'GetItemDetails'
+});]]&gt;&lt;/script&gt;&lt;sys_class_name&gt;sys_script_include&lt;/sys_class_name&gt;&lt;sys_created_by&gt;maint&lt;/sys_created_by&gt;&lt;sys_created_on&gt;2025-05-25 05:39:42&lt;/sys_created_on&gt;&lt;sys_id&gt;20b4cb102875ea10f8775095a77968f5&lt;/sys_id&gt;&lt;sys_mod_count&gt;6&lt;/sys_mod_count&gt;&lt;sys_name&gt;GetItemDetails&lt;/sys_name&gt;&lt;sys_package display_value="Biblioshelf" source="x_snc_biblioshelf"&gt;8b7f1e942871ea10f8775095a7796897&lt;/sys_package&gt;&lt;sys_policy/&gt;&lt;sys_scope display_value="Biblioshelf"&gt;8b7f1e942871ea10f8775095a7796897&lt;/sys_scope&gt;&lt;sys_update_name&gt;sys_script_include_20b4cb102875ea10f8775095a77968f5&lt;/sys_update_name&gt;&lt;sys_updated_by&gt;maint&lt;/sys_updated_by&gt;&lt;sys_updated_on&gt;2025-05-25 05:52:35&lt;/sys_updated_on&gt;&lt;/sys_script_include&gt;&lt;/record_update&gt;</payload>
+        <payload_hash>-450877657</payload_hash>
+        <record_name>GetItemDetails</record_name>
+        <reverted_from/>
+        <source>037f1e942871ea10f8775095a7796899</source>
+        <source_table>sys_update_set</source_table>
+        <state>previous</state>
+        <sys_created_by>maint</sys_created_by>
+        <sys_created_on>2025-05-25 05:52:35</sys_created_on>
+        <sys_id>9e184f542875ea10f8775095a77968d7</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_recorded_at>197060009cc0000001</sys_recorded_at>
+        <sys_updated_by>maint</sys_updated_by>
+        <sys_updated_on>2025-05-25 05:52:35</sys_updated_on>
+        <type>Script Include</type>
+        <update_guid>46184f549c75ea1036dbf94fec4002d7</update_guid>
+        <update_guid_history>46184f549c75ea1036dbf94fec4002d7:-450877657,dfe74b543675ea107f384067ab22ef94:1769186984,ddd70754bc75ea101658275e948a8280:356738805,9f9703545b75ea10f849bbd45f461100:-1732815077,0977cf14db75ea1099ad466d580f68fc:-1961862956,ba850b504f75ea104c9503e2862a1823:-1084089683,312587501875ea10408b5f1f048d5b19:50942102</update_guid_history>
+    </sys_update_version>
+    <sys_metadata_delete action="INSERT_OR_UPDATE">
+        <sys_audit_delete/>
+        <sys_class_name>sys_metadata_delete</sys_class_name>
+        <sys_created_by>maint</sys_created_by>
+        <sys_created_on>2025-05-25 15:12:41</sys_created_on>
+        <sys_db_object display_value="" name="sys_script_include">sys_script_include</sys_db_object>
+        <sys_id>11313cec96434d2c889c93e7d5512bc4</sys_id>
+        <sys_metadata>20b4cb102875ea10f8775095a77968f5</sys_metadata>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>GetItemDetails</sys_name>
+        <sys_package display_value="Biblioshelf" source="x_snc_biblioshelf">8b7f1e942871ea10f8775095a7796897</sys_package>
+        <sys_parent/>
+        <sys_policy/>
+        <sys_scope display_value="Biblioshelf">8b7f1e942871ea10f8775095a7796897</sys_scope>
+        <sys_scope_delete display_value="">09f28a00ed0a40389664abdd9b052e40</sys_scope_delete>
+        <sys_update_name>sys_script_include_20b4cb102875ea10f8775095a77968f5</sys_update_name>
+        <sys_update_version display_value="sys_script_include_20b4cb102875ea10f8775095a77968f5">9e184f542875ea10f8775095a77968d7</sys_update_version>
+        <sys_updated_by>maint</sys_updated_by>
+        <sys_updated_on>2025-05-25 15:12:41</sys_updated_on>
+    </sys_metadata_delete>
+</record_update>

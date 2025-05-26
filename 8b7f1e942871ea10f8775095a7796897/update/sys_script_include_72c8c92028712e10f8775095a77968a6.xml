@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_script_include">
+    <sys_script_include action="INSERT_OR_UPDATE">
+        <access>package_private</access>
+        <active>true</active>
+        <api_name>x_snc_biblioshelf.biblioshelfUtils</api_name>
+        <caller_access/>
+        <client_callable>true</client_callable>
+        <description/>
+        <mobile_callable>false</mobile_callable>
+        <name>biblioshelfUtils</name>
+        <sandbox_callable>false</sandbox_callable>
+        <script><![CDATA[var biblioshelfUtils = Class.create();
+biblioshelfUtils.prototype = Object.extendsObject(global.AbstractAjaxProcessor, {
+
+    getItemDetailsForBook: function() {
+        var itemSysId = this.getParameter('sysparm_book_id');
+        var response = this.getItemDetailsHelper(itemSysId);
+        return response;
+    },
+
+    getItemDetailsForEbook: function() {
+        var itemSysId = this.getParameter('sysparm_ebook_id');
+        var response = this.getItemDetailsHelper(itemSysId);
+        return response;
+    },
+
+    getItemDetailsHelper: function(itemSysId) {
+        var gr = new GlideRecord('x_snc_biblioshelf_items');
+        gr.addQuery('sys_id', itemSysId);
+        gr.query();
+
+        if (gr.next()) {
+            return JSON.stringify({
+                title: gr.getValue('title'),
+                author: gr.getValue('author'),
+                genre: gr.getValue('genre'),
+                edition: gr.getValue('edition'),
+                price: gr.getValue('price'),
+                fine_per_day: gr.getValue('fine_per_day')
+            });
+        }
+
+        return JSON.stringify({});
+    },
+
+    getItemType: function() {
+        var issuedItemId = this.getParameter('sysparm_issued_item_id');
+        var gr = new GlideRecord('x_snc_biblioshelf_items');
+        gr.addQuery('sys_id', issuedItemId);
+        gr.query();
+
+        if (gr.next()) {
+            return gr.getDisplayValue('item_type');
+        }
+    },
+    updateBookCount: function() {
+        var itemSysId = this.getParameter('sysparm_issued_item_id');
+        var bookGr = new GlideRecord('x_snc_biblioshelf_books');
+        bookGr.addQuery('book_id', itemSysId);
+        bookGr.query();
+
+        if (bookGr.next()) {
+            var currentCount = Number(bookGr.getValue('no_of_copies_available'));
+            if (currentCount > 0) {
+                bookGr.setValue('no_of_copies_available', currentCount - 1);
+                bookGr.update();
+                return 'Book count updated!';
+            } else {
+                return 'No books available!';
+            }
+        }
+        return 'Book not found';
+    },
+
+	updateBookAllowance: function() {
+        var memberSysId = this.getParameter('sysparm_issued_to');
+        var memberGr = new GlideRecord('x_snc_biblioshelf_members');
+
+        if (memberGr.get(memberSysId)) {
+            var allowedCount = Number(memberGr.getValue('no_of_books_allowed'));
+            if (allowedCount > 0) {
+                memberGr.setValue('no_of_books_allowed', allowedCount - 1);
+                memberGr.update();
+                return 'Book allowance updated!';
+            } else {
+                return 'User has no book allowance left!';
+            }
+        }
+    },
+
+    type: 'biblioshelfUtils'
+});]]></script>
+        <sys_class_name>sys_script_include</sys_class_name>
+        <sys_created_by>maint</sys_created_by>
+        <sys_created_on>2025-05-25 15:15:49</sys_created_on>
+        <sys_id>72c8c92028712e10f8775095a77968a6</sys_id>
+        <sys_mod_count>29</sys_mod_count>
+        <sys_name>biblioshelfUtils</sys_name>
+        <sys_package display_value="Biblioshelf" source="x_snc_biblioshelf">8b7f1e942871ea10f8775095a7796897</sys_package>
+        <sys_policy>read</sys_policy>
+        <sys_scope display_value="Biblioshelf">8b7f1e942871ea10f8775095a7796897</sys_scope>
+        <sys_update_name>sys_script_include_72c8c92028712e10f8775095a77968a6</sys_update_name>
+        <sys_updated_by>maint</sys_updated_by>
+        <sys_updated_on>2025-05-26 08:54:15</sys_updated_on>
+    </sys_script_include>
+</record_update>

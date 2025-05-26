@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_csrf_public_apis_violation">
+    <sys_csrf_public_apis_violation action="INSERT_OR_UPDATE">
+        <api_path>/now/graphql</api_path>
+        <request_processor>RESTAPIProcessor</request_processor>
+        <request_referer>/$flow-designer.do</request_referer>
+        <sample_request_detail>Origin: https://k8s0748240-node1.thunder.devsnc.com; From IP: 52.36.193.175; User agent: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/136.0.0.0 Safari/537.36; TransID: 5f5e09f828b5; SessionID: EBBEFFEC28316E10F8775095A779684D</sample_request_detail>
+        <sys_class_name>sys_csrf_public_apis_violation</sys_class_name>
+        <sys_created_by>maint</sys_created_by>
+        <sys_created_on>2025-05-26 10:17:41</sys_created_on>
+        <sys_id>5f5ec93c28396e10f8775095a7796801</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package display_value="Biblioshelf" source="x_snc_biblioshelf">8b7f1e942871ea10f8775095a7796897</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Biblioshelf">8b7f1e942871ea10f8775095a7796897</sys_scope>
+        <sys_update_name>sys_csrf_public_apis_violation_5f5ec93c28396e10f8775095a7796801</sys_update_name>
+        <sys_updated_by>maint</sys_updated_by>
+        <sys_updated_on>2025-05-26 10:17:41</sys_updated_on>
+    </sys_csrf_public_apis_violation>
+</record_update>
