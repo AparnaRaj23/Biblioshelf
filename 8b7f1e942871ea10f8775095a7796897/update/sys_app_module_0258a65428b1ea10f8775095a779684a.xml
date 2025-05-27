@@ -1,43 +1,43 @@
 <?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="sys_app_module">
-    <sys_app_module action="INSERT_OR_UPDATE">
-        <active>true</active>
-        <application display_value="Biblioshelf">5e9fde942871ea10f8775095a77968d9</application>
-        <assessment/>
-        <device_type/>
-        <filter/>
-        <hint/>
-        <homepage/>
-        <image/>
-        <link_type>LIST</link_type>
-        <map_page/>
-        <mobile_title>Ebooks</mobile_title>
-        <mobile_view_name>Mobile</mobile_view_name>
-        <name>x_snc_biblioshelf_ebooks</name>
-        <order/>
-        <override_menu_roles>false</override_menu_roles>
-        <query/>
-        <report/>
-        <require_confirmation>true</require_confirmation>
-        <roles>x_snc_biblioshelf.ebooks_user</roles>
-        <sys_class_name>sys_app_module</sys_class_name>
-        <sys_created_by>maint</sys_created_by>
-        <sys_created_on>2025-05-25 03:33:51</sys_created_on>
-        <sys_domain>global</sys_domain>
-        <sys_domain_path>/</sys_domain_path>
-        <sys_id>0258a65428b1ea10f8775095a779684a</sys_id>
-        <sys_mod_count>0</sys_mod_count>
-        <sys_name>Ebooks</sys_name>
-        <sys_overrides/>
-        <sys_package display_value="Biblioshelf" source="x_snc_biblioshelf">8b7f1e942871ea10f8775095a7796897</sys_package>
-        <sys_policy/>
-        <sys_scope display_value="Biblioshelf">8b7f1e942871ea10f8775095a7796897</sys_scope>
-        <sys_update_name>sys_app_module_0258a65428b1ea10f8775095a779684a</sys_update_name>
-        <sys_updated_by>maint</sys_updated_by>
-        <sys_updated_on>2025-05-25 03:33:51</sys_updated_on>
-        <timeline_page/>
-        <title>Ebooks</title>
-        <uncancelable>false</uncancelable>
-        <view_name/>
-        <window_name/>
-    </sys_app_module>
+  <sys_app_module action="INSERT_OR_UPDATE">
+    <active>true</active>
+    <application display_value="Biblioshelf">5e9fde942871ea10f8775095a77968d9</application>
+    <assessment/>
+    <device_type/>
+    <filter/>
+    <hint/>
+    <homepage/>
+    <image/>
+    <link_type>LIST</link_type>
+    <map_page/>
+    <mobile_title>Ebooks</mobile_title>
+    <mobile_view_name>Mobile</mobile_view_name>
+    <name>x_snc_biblioshelf_ebooks</name>
+    <order/>
+    <override_menu_roles>false</override_menu_roles>
+    <query/>
+    <report/>
+    <require_confirmation>true</require_confirmation>
+    <roles>x_snc_biblioshelf.ebooks_user,x_snc_biblioshelf.admin,x_snc_biblioshelf.bib_staff,x_snc_biblioshelf.bib_user</roles>
+    <sys_class_name>sys_app_module</sys_class_name>
+    <sys_created_by>maint</sys_created_by>
+    <sys_created_on>2025-05-25 03:33:51</sys_created_on>
+    <sys_domain>global</sys_domain>
+    <sys_domain_path>/</sys_domain_path>
+    <sys_id>0258a65428b1ea10f8775095a779684a</sys_id>
+    <sys_mod_count>1</sys_mod_count>
+    <sys_name>Ebooks</sys_name>
+    <sys_overrides/>
+    <sys_package display_value="Biblioshelf" source="x_snc_biblioshelf">8b7f1e942871ea10f8775095a7796897</sys_package>
+    <sys_policy/>
+    <sys_scope display_value="Biblioshelf">8b7f1e942871ea10f8775095a7796897</sys_scope>
+    <sys_update_name>sys_app_module_0258a65428b1ea10f8775095a779684a</sys_update_name>
+    <sys_updated_by>admin</sys_updated_by>
+    <sys_updated_on>2025-05-27 04:42:56</sys_updated_on>
+    <timeline_page/>
+    <title>Ebooks</title>
+    <uncancelable>false</uncancelable>
+    <view_name/>
+    <window_name/>
+  </sys_app_module>
 </record_update>
